@@ -1,0 +1,194 @@
+﻿.body{background-color: rgba(240, 240, 240, 1);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    animation-duration: 500ms;
+    color: #ffffff; }
+
+.head{font-size: 150%;
+    position: fixed;
+    z-index: 3;
+    background-image: url(img/bo.jpg); background-size: cover;
+    height: 11%;
+    left: 0;
+    top: 0;
+    width: 100%;}
+
+.str1{font-size: 150%;
+    position: absolute;
+    z-index: 2;
+    left: 48%;
+    top: 90%;}
+
+.table{margin-top: 80px; font-size: 150%;}
+
+.table1{background-image: url(img/fon/1.jpg); width: 33.25%; height: 44.45%; position: absolute; left: 0%; background-size: cover; font-size: 170%;}
+.table1:hover{background-image: url(img/fon/11.jpg); width: 33.25%; height: 44.45%; position: absolute; left: 0%; font-size: 170%;-moz-transition: 300ms ease;-o-transition: 300ms ease;-webkit-transition: 300ms ease;}
+
+.table2{background-image: url(img/fon/2.jpg); width: 33.25%; height: 44.45%; position: absolute; left: 33.3%; background-size: cover; font-size: 170%;}
+.table2:hover{background-image: url(img/fon/22.jpg); width: 33.25%; height: 44.45%; position: absolute; left: 33.3%; font-size: 170%;-moz-transition: 300ms ease;-o-transition: 300ms ease;-webkit-transition: 300ms ease;}
+
+.table3{background-image: url(img/fon/3.jpg); width: 33.25%; height: 44.45%; position: absolute; left: 66.6%; background-size: cover; font-size: 170%;}
+.table3:hover{background-image: url(img/fon/33.jpg); width: 33.25%; height: 44.45%; position: absolute; left: 66.6%; font-size: 170%;-moz-transition: 300ms ease;-o-transition: 300ms ease;-webkit-transition: 300ms ease;}
+
+.table4{background-image: url(img/fon/4.jpg); width: 33.25%; height: 44.45%; position: absolute; left: 0%; background-size: cover; font-size: 170%; margin-top: 21.7%;}
+.table4:hover{background-image: url(img/fon/44.jpg); width: 33.25%; height: 44.45%; position: absolute; left: 0%; background-size: cover; font-size: 170%; margin-top: 21.7%;-moz-transition: 300ms ease;-o-transition: 300ms ease;-webkit-transition: 300ms ease;}
+
+.table5{background-image: url(img/fon/5.jpg); width: 33.25%; height: 44.45%; position: absolute; left: 33.3%; background-size: cover; font-size: 170%; margin-top: 21.7%;}
+.table5:hover{background-image: url(img/fon/55.jpg); width: 33.25%; height: 44.45%; position: absolute; left: 33.3%; background-size: cover; font-size: 170%; margin-top: 21.7%;-moz-transition: 300ms ease;-o-transition: 300ms ease;-webkit-transition: 300ms ease;}
+
+.table6{background-image: url(img/fon/6.jpg); width: 33.25%; height: 44.45%; position: absolute; left: 66.6%; background-size: cover; font-size: 170%; margin-top: 21.7%;}
+.table6:hover{background-image: url(img/fon/66.jpg); width: 33.25%; height: 44.45%; position: absolute; left: 66.6%; background-size: cover; font-size: 170%; margin-top: 21.7%;-moz-transition: 300ms ease;-o-transition: 300ms ease;-webkit-transition: 300ms ease;}
+
+.table21{background-image: url(img/shm/111.jpg); width: 19.9%; height: 55%; position: absolute; left: 0%; top: 0; background-size: cover; font-size: 100%;}
+.table22{background-image: url(img/shm/222.jpg); width: 19.9%; height: 55%; position: absolute; left: 19.9%; top: 0; background-size: cover; font-size: 100%;}
+.table23{background-image: url(img/shm/333.jpg); width: 19.9%; height: 55%; position: absolute; left: 39.8%; top: 0; background-size: cover; font-size: 100%;}
+.table24{background-image: url(img/shm/444.jpg); width: 19.9%; height: 55%; position: absolute; left: 59.7%; top: 0; background-size: cover; font-size: 100%;}
+.table25{background-image: url(img/shm/555.jpg); width: 19.9%; height: 55%; position: absolute; left: 79.6%; top: 0; background-size: cover; font-size: 100%;}
+
+.table31{background-image: url(img/work/w1.jpg); width: 19.9%; height: 55%; position: absolute; left: 0%; top: 0; background-size: cover; font-size: 100%;}
+.table32{background-image: url(img/work/w2.jpg); width: 19.9%; height: 55%; position: absolute; left: 19.9%; top: 0; background-size: cover; font-size: 100%;}
+.table33{background-image: url(img/work/w3.jpg); width: 19.9%; height: 55%; position: absolute; left: 39.8%; top: 0; background-size: cover; font-size: 100%;}
+.table34{background-image: url(img/work/w4.jpg); width: 19.9%; height: 55%; position: absolute; left: 59.7%; top: 0; background-size: cover; font-size: 100%;}
+.table35{background-image: url(img/work/w5.jpg); width: 19.9%; height: 55%; position: absolute; left: 79.6%; top: 0; background-size: cover; font-size: 100%;}
+
+.table41{background-image: url(img/pr/p1.jpg); width: 19.9%; height: 55%; position: absolute; left: 0%; top: 0; background-size: cover; font-size: 100%;}
+.table42{background-image: url(img/pr/p2.jpg); width: 19.9%; height: 55%; position: absolute; left: 19.9%; top: 0; background-size: cover; font-size: 100%;}
+.table43{background-image: url(img/pr/p3.jpg); width: 19.9%; height: 55%; position: absolute; left: 39.8%; top: 0; background-size: cover; font-size: 100%;}
+.table44{background-image: url(img/pr/p4.jpg); width: 19.9%; height: 55%; position: absolute; left: 59.7%; top: 0; background-size: cover; font-size: 100%;}
+.table45{background-image: url(img/pr/p5.jpg); width: 19.9%; height: 55%; position: absolute; left: 79.6%; top: 0; background-size: cover; font-size: 100%;}
+
+.table212{width: 19.9%; height: 35%; position: absolute; left: 0%; top: 58%; background-size: cover; font-size: 78.5%; border-right: 1px solid #fff;}
+.table222{width: 19.9%; height: 35%; position: absolute; left: 19.9%; top: 58%; background-size: cover; font-size: 78.5%; border-right: 1px solid #fff;}
+.table232{width: 19.9%; height: 35%; position: absolute; left: 39.8%; top: 58%; background-size: cover; font-size: 78.5%; border-right: 1px solid #fff;}
+.table242{width: 19.9%; height: 35%; position: absolute; left: 59.7%; top: 58%; background-size: cover; font-size: 78.5%; border-right: 1px solid #fff;}
+.table252{width: 19.9%; height: 35%; position: absolute; left: 79.6%; top: 58%; background-size: cover; font-size: 78.5%; border-right: 0px solid #fff;}
+
+.td1{border-left: 1px solid;}
+.td2{border-left: 1px solid; border-right: 1px solid;}
+
+.s1{cursor: default;}
+
+.pointer{cursor: pointer;}
+.close{cursor: pointer; position: fixed; bottom: 0; left: 49.25%;}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 20px;
+  }
+}
+
+#window1{width: 100%;
+        color:#ffffff;
+        font-size: 130%;
+        height: 85%;
+        overflow: auto;
+		display: none;
+		background-color: rgba(1, 1, 1, 0.95);
+		z-index: 3;
+		position: fixed;
+        top: 11%;
+        left: 0;
+        right: 0;
+		bottom: 0;
+		padding: 16px;
+        animation-duration: 500ms;
+        animation-name: slidein;}
+#window2{width: 100%;
+        color:#ffffff;
+        font-size: 130%;
+        height: 85%;
+        overflow: auto;
+		display: none;
+		background-color: rgba(1, 1, 1, 0.95);
+		z-index: 3;
+		position: fixed;
+        top: 11%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 16px;
+        animation-duration: 500ms;
+        animation-name: slidein;}
+#window3{width: 100%;
+        color:#ffffff;
+        font-size: 130%;
+        height: 85%;
+        overflow: auto;
+		display: none;
+		background-color: rgba(1, 1, 1, 0.95);
+		z-index: 3;
+		position: fixed;
+        top: 11%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 16px;
+        animation-duration: 500ms;
+        animation-name: slidein;}
+#window4{width: 100%;
+        color:#ffffff;
+        font-size: 130%;
+        height: 85%;
+        overflow: auto;
+		display: none;
+		background-color: rgba(1, 1, 1, 0.95);
+		z-index: 3;
+		position: fixed;
+        top: 11%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 16px;
+        animation-duration: 500ms;
+        animation-name: slidein;}
+#window5{width: 100%;
+        color:#ffffff;
+        font-size: 130%;
+        height: 85%;
+        overflow: auto;
+		display: none;
+		background-color: rgba(1, 1, 1, 0.95);
+		z-index: 3;
+		position: fixed;
+        top: 11%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 16px;
+        animation-duration: 500ms;
+        animation-name: slidein;}
+#window6{width: 100%;
+        color:#ffffff;
+        font-size: 130%;
+        height: 85%;
+        overflow: auto;
+		display: none;
+		background-color: rgba(1, 1, 1, 0.95);
+		z-index: 3;
+		position: fixed;
+        top: 11%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 16px;
+        animation-duration: 500ms;
+        animation-name: slidein;}
+#window7{width: 100%;
+        color:#ffffff;
+        font-size: 130%;
+        height: 85%;
+        overflow: auto;
+		display: none;
+		background-color: rgba(1, 1, 1, 0.95);
+		z-index: 3;
+		position: fixed;
+        top: 11%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 16px;
+        animation-duration: 500ms;
+        animation-name: slidein;}
