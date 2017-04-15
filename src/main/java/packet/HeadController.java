@@ -9,11 +9,9 @@ import java.util.List;
 @Controller
 public class HeadController {
 
-
     @RequestMapping("/")
     public String index(Model model) {
         FileReader fileReader = new FileReader();
-
 
         try {
             Saving i = fileReader.getSaving();
@@ -21,8 +19,6 @@ public class HeadController {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-
-
 
         return "index";
     }

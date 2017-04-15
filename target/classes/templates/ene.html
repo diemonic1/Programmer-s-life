@@ -38,7 +38,9 @@
         <td width="200" class="td2"><center>настроение</center></td><img src="img/settings.png" class="pointer" onclick="show7('block')" width="30" hspace="46%" vspace="15" height="30"  alt="Настройки"/>
     </tr>
     <tr>
-
+        <td><center><span th:text="${strings.ene}"></span></center></td>
+        <td><center><span th:text="${strings.den}"></span></center></td>
+        <td><center><span th:text="${strings.hap}"></span></center></td>
     </tr>
 </table>
 </center>
@@ -50,14 +52,14 @@
 <div id="window">
 <table class="table" cellpadding="0">
     <tr>
-        <td action="#" th:action="@{/ene/}" method="POST" class="table11"><span class="pri">+10 энергии<br/>+3 настроения</span><span class="pri2">50 р.</span></td>
+        <td class="table11"><span class="pri">+10 энергии<br/>+3 настроения</span><span class="pri2">50 р.</span></td>
         <td class="table12"><span class="pri">+25 энергии<br/>+5 настроения</span><span class="spana2"><span class="texta2">Необходимо создать первый проект - тараканьи бега</span><img src="img/v.png" width="100%" height="98%"/><span class="pri2">150 р.</span></span></td>
         <td class="table13"><span class="pri">+30 энергии<br/>+6 настроения</span><span class="spana2"><span class="texta2">Необходимо создать фри-ту-плэй клон ГТА</span><img src="img/v.png" width="100%" height="98%"/><span class="pri2">200 р.</span></span></td>
         <td class="table14"><span class="pri">+35 энергии<br/>+8 настроения</span><span class="spana2"><span class="texta2">Необходимо открыть интернет-магазин</span><img src="img/v.png" width="100%" height="98%"/><span class="pri2">350 р.</span></span></td>
         <td class="table15"><span class="pri">+40 энергии<br/>+10 настроения</span><span class="spana3"><span class="texta3">Необходимо создать свой стартап на кикстартере</span><img src="img/v.png" width="100%" height="98%"/><span class="pri2">500 р.</span></span></td>
     </tr>
     <tr>
-        <td class="table212"><center><font class="s1">Заварить дошик</font></center></td>
+        <td class="table212"><center><font class="s1"  th:action="@{/2/}" method="POST">Заварить дошик</font></center></td>
         <td class="table222"><center><font class="s1">Купить пирожков</font></center></td>
         <td class="table232"><center><font class="s1">Выпить кофейку</font></center></td>
         <td class="table242"><center><font class="s1">Купить шавермы</font></center></td>
