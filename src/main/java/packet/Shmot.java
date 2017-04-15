@@ -14,10 +14,12 @@ public class Shmot {
                 //читаем из файла
                 Saving saving = FileReader.getSaving();
                 while (true) {
-                    System.out.println(saving.getDen() + " рублей    " + saving.getHap() + " настроения    " + saving.getEne() + " энергии    " + saving.getXp() + " опыт");
+                    System.out.println("     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n");
+                    System.out.println(saving.getDen() + " рублей | " + saving.getHap() + " настроения | " + saving.getEne() + " энергии");
                     System.out.println("-----");
                     System.out.println("одежда - " + saving.getShmot());
                     System.out.println("компьютер - " + saving.getKomp());
+                    System.out.println("проект - " + saving.getProject());
                     System.out.println("-----");
                     System.out.println("1:Брюки, туфли и рубашка - не стильно, не модно, не молодежно - 2 000 рублей");
 
@@ -81,7 +83,7 @@ public class Shmot {
                         }
                     }
                     if (x == 2 && (saving.getDen() < 6500 || saving.getPr() < 0)) {
-                        System.out.println("Неоходимо 6 500 рублей и создать свой первый проект");
+                        System.out.println("Неоходимо 6 500 рублей и создать свой первый проект - тараканьи бега");
                     }
 
                     if (x == 3 && saving.getDen() >= 11000 && saving.getPr2() >= 0) {

@@ -6,6 +6,32 @@
   <title>Programmer's life</title>
   <link rel="shortcut icon" href="img/ico.gif" type="image/x-gif"/>
   <link rel="stylesheet" href="st.css"/>
+  <style>
+  @media screen and (max-device-width: 800px) {
+    .table{margin-top: 8%;}
+    .table4{margin-top: 33.2%;}
+    .table5{margin-top: 33.2%;}
+    .table6{margin-top: 33.2%;}
+    .table21{font-size: 90%;}
+    .table22{font-size: 90%;}
+    .table23{font-size: 90%;}
+    .table24{font-size: 90%;}
+    .table25{font-size: 90%;}
+    .table51{font-size: 90%;}
+    .table52{font-size: 90%;}
+    .table53{font-size: 90%;}
+    .table54{font-size: 90%;}
+    .table55{font-size: 90%;}
+    .table41{font-size: 90%;}
+    .table42{font-size: 90%;}
+    .table43{font-size: 90%;}
+    .table44{font-size: 90%;}
+    .table45{font-size: 90%;}
+    .s1{font-size: 80%;}
+    .s2{font-size: 80%;}
+    .pri2{font-size: 90%;}
+  }
+</style>
 </head>
 <body class="body">
 
@@ -15,28 +41,23 @@
 <center>
 <table>
     <tr>
-        <td width="200" class="td1"><center>рубли</center></td>
-        <td width="200" class="td1"><center>настроение</center></td>
         <td width="200" class="td1"><center>энергия</center></td>
-        <td width="200" class="td2"><center>опыт</center></td><img src="img/settings.png" class="pointer" onclick="show7('block')" width="30" hspace="15" vspace="15" height="30" align="right" alt="Настройки"/>
+        <td width="200" class="td1"><center>рубли</center></td>
+        <td width="200" class="td2"><center>настроение</center></td><img src="img/settings.png" class="pointer" onclick="show7('block')" width="30" hspace="46%" vspace="15" height="30"  alt="Настройки"/>
     </tr>
-    <tr th:each="string,iterationStatus: ${strings}">
-        <td><center><span th:text="${string.den}"></span></center></td>
-        <td><center><span th:text="${string.hap}"></span></center></td>
-        <td><center><span th:text="${string.ene}"></span></center></td>
-        <td><center><span th:text="${string.xp}"></span></center></td>
+    <tr>
+        <td><center><span th:text="${strings.ene}"></span></center></td>
+        <td><center><span th:text="${strings.den}"></span></center></td>
+        <td><center><span th:text="${strings.hap}"></span></center></td>
     </tr>
 </table>
 </center>
 
-
-
 </div>
-
-<div>
 
 <center>
 
+<div>
 <table class="table">
     <tr>
         <td class="table1" onclick="show1('block')"><center><font class="s1">гардероб</font></center></td>
@@ -44,24 +65,16 @@
         <td class="table3" onclick="show3('block')"><center><font class="s1">компьютеры</font></center></td>
     </tr>
     <tr>
-        <td class="table4" onclick="show4('block')"><center><font class="s1">энергия</font></center></td>
-        <td class="table5" onclick="show5('block')"><center><font class="s1">работа</font></center></td>
-        <td class="table6" onclick="show6('block')"><center><font class="s1">настроение</font></center></td>
+        <td onClick='location.href="/ene/"' class="table4"><center><font class="s1"><a href="/ene/">энергия</a></font></center></td>
+        <td onClick='location.href="work.html"' class="table5" onclick="show5('block')"><center><font class="s1">работа</font></center></td>
+        <td onClick='location.href="na.html"' class="table6" onclick="show6('block')"><center><font class="s1">настроение</font></center></td>
     </tr>
 </table>
-
+</div>
 </center>
 
-</div>
-
-
-
-
-
-
-
 </body>
-<!--начало--><script type="text/javascript">
+<!--начало1--><script type="text/javascript">
 			function show1(state){
 					document.getElementById('window1').style.display = state;
 			}
@@ -73,11 +86,11 @@
         <!-- текст-->
 <table class="table" cellpadding="0">
     <tr>
-        <td class="table21"></td>
-        <td class="table22"></td>
-        <td class="table23"></td>
-        <td class="table24"></td>
-        <td class="table25"></td>
+        <td class="table21"><span class="pri2">2 000 р.</span></td>
+        <td class="table22"><span class="spana"><span class="texta">Неоходимо создать свой первый проект</span><img src="img/v.png" width="100%" height="98%"/><span class="pri2">6 500 р.</span></span></td>
+        <td class="table23"><span class="spana"><span class="texta">Неоходимо создать фри-ту-плэй клон ГТА</span><img src="img/v.png" width="100%" height="98%"/><span class="pri2">11 000 р.</span></span></td>
+        <td class="table24"><span class="spana"><span class="texta">Неоходимо открыть интернет-магазин</span><img src="img/v.png" width="100%" height="98%"/><span class="pri2">16 000 р.</span></span></td>
+        <td class="table25"><span class="spana"><span class="texta">Неоходимо создать свой стартап</span><img src="img/v.png" width="100%" height="98%"/><span class="pri2">23 000 р.</span></span></td>
     </tr>
     <tr>
         <td class="table212"><center><font class="s1">Брюки, туфли и рубашка</font></center></td>
@@ -86,10 +99,10 @@
         <td class="table242"><center><font class="s1">Свитшот, черные джинсы и кеды</font></center></td>
         <td class="table252"><center><font class="s1">Фланелевая рубашка, джоггеры и олд скулы</font></center></td>
     </tr>
-</table>
-<!--конец--></div>
+</table>  
+<!--конец1--></div>
 
-<!--начало--><script type="text/javascript">
+<!--начало2--><script type="text/javascript">
 			function show2(state){
 					document.getElementById('window2').style.display = state;
 			}
@@ -101,11 +114,11 @@
         <!-- текст-->
             <table class="table" cellpadding="0">
     <tr>
-        <td class="table41"></td>
-        <td class="table42"></td>
-        <td class="table43"></td>
-        <td class="table44"></td>
-        <td class="table45"></td>
+        <td class="table41"><span class="spana"><span class="texta">Необходимы брюки, туфли, рубашка и ноутбук</span><img src="img/v.png" width="100%" height="98%"/><span class="pri2">5 000 р.</span></span></td>
+        <td class="table42"><span class="spana"><span class="texta">Необходимы кофта, штаны, кросовки ABIBAS и готовая сборка компбютера</span><img src="img/v.png" width="100%" height="98%"/><span class="pri2">20 000 р.</span></span></td>
+        <td class="table43"><span class="spana"><span class="texta">Необходимы бомбер, джинсы, спортивки и готовая компьютер улучшениями</span><img src="img/v.png" width="100%" height="98%"/><span class="pri2">80 000 р.</span></span></td>
+        <td class="table44"><span class="spana"><span class="texta">Необходимы свитшот, черные джинсы, кеды и Дорогущий топовый компьютер</span><img src="img/v.png" width="100%" height="98%"/><span class="pri2">120 000 р.</span></span></td>
+        <td class="table45"><span class="spana"><span class="texta">Необходимы фланелевая рубашка, джоггеры, олд скулы и сделаный на заказ ПК</span><img src="img/v.png" width="100%" height="98%"/></span></td>
     </tr>
     <tr>
         <td class="table212"><center><font class="s1">Устроить тараканьи бега со ставками в подсобке компании</font></center></td>
@@ -115,9 +128,9 @@
         <td class="table252"><center><font class="s1">Стать великим программистом</font></center></td>
     </tr>
 </table>
-<!--конец--></div>
+<!--конец2--></div>
 
-<!--начало--><script type="text/javascript">
+<!--начало3--><script type="text/javascript">
 			function show3(state){
 					document.getElementById('window3').style.display = state;
 			}
@@ -127,64 +140,25 @@
      	<!-- Картинка крестика-->
         <div class="close" onclick="show3('none')"><img src="img/kre.gif" width="50" height="50"/></div>
         <!-- текст-->
-            <p>333</p>
-<!--конец--></div>
-
-<!--начало--><script type="text/javascript">
-			function show4(state){
-					document.getElementById('window4').style.display = state;
-			}
-</script>
-<!-- Само окно-->
-<div id="window4">
-     	<!-- Картинка крестика-->
-        <div class="close" onclick="show4('none')"><img src="img/kre.gif" width="50" height="50"/></div>
-        <!-- текст-->
-            <p>444</p>
-<!--конец--></div>
-
-<!--начало--><script type="text/javascript">
-			function show5(state){
-					document.getElementById('window5').style.display = state;
-			}
-</script>
-<!-- Само окно-->
-<div id="window5">
-     	<!-- Картинка крестика-->
-        <div class="close" onclick="show5('none')"><img src="img/kre.gif" width="50" height="50"/></div>
-        <!-- текст-->
             <table class="table" cellpadding="0">
     <tr>
-        <td class="table31"></td>
-        <td class="table32"></td>
-        <td class="table33"></td>
-        <td class="table34"></td>
-        <td class="table35"></td>
+        <td class="table51"><span class="spana"><span class="texta">Неоходимы брюки, туфли и рубашка</span><img src="img/v.png" width="100%" height="98%"/><span class="pri2">2 000 р.</span></span></td>
+        <td class="table52"><span class="spana"><span class="texta">Неоходимо создать свой первый проект - тараканьи бега</span><img src="img/v.png" width="100%" height="98%"/><span class="pri2">20 000 р.</span></span></td>
+        <td class="table53"><span class="spana"><span class="texta">Неоходимо создать фри-ту-плэй клон ГТА</span><img src="img/v.png" width="100%" height="98%"/><span class="pri2">50 000 р.</span></span></td>
+        <td class="table54"><span class="spana"><span class="texta">Неоходимо открыть интернет-магазин</span><img src="img/v.png" width="100%" height="98%"/><span class="pri2">120 000 р.</span></span></td>
+        <td class="table55"><span class="spana"><span class="texta">Неоходимо создать свой стартап</span><img src="img/v.png" width="100%" height="98%"/><span class="pri2">600 000 р.</span></span></td>
     </tr>
     <tr>
-        <td class="table212"><center><font class="s1">Работать промоутером</font></center></td>
-        <td class="table222"><center><font class="s1">Заправлять катриджи для принтеров</font></center></td>
-        <td class="table232"><center><font class="s1">Набирать тексты</font></center></td>
-        <td class="table242"><center><font class="s1">Перепродавать аккаунты Clash of clans</font></center></td>
-        <td class="table252"><center><font class="s1">Воровать у китая данные</font></center></td>
+        <td class="table212"><center><font class="s1">Банальный слабенький ноутбок</font></center></td>
+        <td class="table222"><center><font class="s1">Купленая в магазине готовая сборка</font></center></td>
+        <td class="table232"><center><font class="s1">Макбук</font></center></td>
+        <td class="table242"><center><font class="s1">Дорогущий топовый компьютер</font></center></td>
+        <td class="table252"><center><font class="s1">Сделаный на заказ ПК</font></center></td>
     </tr>
 </table>
-<!--конец--></div>
+<!--конец3--></div>
 
-<!--начало--><script type="text/javascript">
-			function show6(state){
-					document.getElementById('window6').style.display = state;
-			}
-</script>
-<!-- Само окно-->
-<div id="window6">
-     	<!-- Картинка крестика-->
-        <div class="close" onclick="show6('none')"><img src="img/kre.gif" width="50" height="50"/></div>
-        <!-- текст-->
-            <p>666</p>
-<!--конец--></div>
-
-<!--начало--><script type="text/javascript">
+<!--начало7--><script type="text/javascript">
 			function show7(state){
 					document.getElementById('window7').style.display = state;
 			}
@@ -195,5 +169,6 @@
         <div class="close" onclick="show7('none')"><img src="img/kre.gif" width="50" height="50"/></div>
         <!-- текст-->
             <p>777</p>
-<!--конец--></div>
+<!--конец7--></div>
+
 </html>

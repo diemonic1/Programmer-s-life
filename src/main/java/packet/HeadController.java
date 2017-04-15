@@ -14,9 +14,15 @@ public class HeadController {
     public String index(Model model) {
         FileReader fileReader = new FileReader();
 
-        List<String> strings = fileReader.getStrings();
 
-        model.addAttribute("strings", strings);
+        try {
+            Saving i = fileReader.getSaving();
+            model.addAttribute("strings", i);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
+
 
         return "index";
     }

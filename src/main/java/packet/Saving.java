@@ -7,7 +7,6 @@ public class Saving {
     private int den;
     private int ene;
     private int hap;
-    private int xp;
     private int pr;
     private int pr2;
     private int pr3;
@@ -15,6 +14,7 @@ public class Saving {
     private int prsumma2;
     private int prsumma3;
     private int prsumma4;
+    private String project;
 
     public String getKomp() {
         return komp;
@@ -54,14 +54,6 @@ public class Saving {
 
     public void setHap(int hap) {
         this.hap = hap;
-    }
-
-    public int getXp() {
-        return xp;
-    }
-
-    public void setXp(int xp) {
-        this.xp = xp;
     }
 
     public int getPr() {
@@ -118,5 +110,13 @@ public class Saving {
 
     public void setPrsumma4(int prsumma4) {
         this.prsumma4 = prsumma4;
+    }
+
+    public String getProject() {
+        return project;
+    }
+
+    public void setProject(String project) {
+        this.project = project;
     }
 }

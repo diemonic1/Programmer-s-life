@@ -11,15 +11,12 @@ public class Food {
                 //читаем из файла
                 Saving saving = FileReader.getSaving();
                 while (true) {
-                    if (saving.getHap() <= 0) {
-                        System.out.println("Программист помер от скуки. Не лучшая смерть.");
-                        System.exit(0);
-                    }
-                    if (saving.getEne() <= 0) {
-                        System.out.println("Усталость взяла свое. Отдохнем на том свете.");
-                        System.exit(0);
-                    }
-                    System.out.println(saving.getDen() + " рублей    " + saving.getHap() + " настроения    " + saving.getEne() + " энергии    " + saving.getXp() + " опыт");
+                    System.out.println("     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n");
+                    System.out.println(saving.getDen() + " рублей | " + saving.getHap() + " настроения | " + saving.getEne() + " энергии");
+                    System.out.println("-----");
+                    System.out.println("одежда - " + saving.getShmot());
+                    System.out.println("компьютер - " + saving.getKomp());
+                    System.out.println("проект - " + saving.getProject());
                     System.out.println("-----");
                     System.out.println("1:Заварить дошик  -50 рублей, +10 энергии, +3 настроения");
 
@@ -59,11 +56,10 @@ public class Food {
                         saving.setDen(saving.getDen() - 50);
                         saving.setEne(saving.getEne() + 20);
                         saving.setHap(saving.getHap() + 3);
-                        saving.setPr(saving.getPr() + 10);
-                        saving.setPr2(saving.getPr2() + 4000);
-                        saving.setPr3(saving.getPr3() + 20000);
-                        saving.setPr4(saving.getPr4() + 40000);
-                        saving.setXp(saving.getXp() + 10);
+                        saving.setPr(saving.getPr() + 20);
+                        saving.setPr2(saving.getPr2() + 400);
+                        saving.setPr3(saving.getPr3() + 700);
+                        saving.setPr4(saving.getPr4() + 900);
                         FileReader.saveSaving(saving);
                     }
                     if (x == 1 && saving.getDen() < 50) {
@@ -76,10 +72,9 @@ public class Food {
                         saving.setEne(saving.getEne() + 25);
                         saving.setHap(saving.getHap() + 5);
                         saving.setPr(saving.getPr() + 10);
-                        saving.setPr2(saving.getPr2() + 4000);
-                        saving.setPr3(saving.getPr3() + 20000);
-                        saving.setPr4(saving.getPr4() + 40000);
-                        saving.setXp(saving.getXp() + 20);
+                        saving.setPr2(saving.getPr2() + 400);
+                        saving.setPr3(saving.getPr3() + 700);
+                        saving.setPr4(saving.getPr4() + 900);
                         FileReader.saveSaving(saving);
                     }
                     if (x == 2 && (saving.getDen() < 150 || saving.getPr() < 0)) {
@@ -92,10 +87,9 @@ public class Food {
                         saving.setEne(saving.getEne() + 30);
                         saving.setHap(saving.getHap() + 6);
                         saving.setPr(saving.getPr() + 10);
-                        saving.setPr2(saving.getPr2() + 4000);
-                        saving.setPr3(saving.getPr3() + 20000);
-                        saving.setPr4(saving.getPr4() + 40000);
-                        saving.setXp(saving.getXp() + 30);
+                        saving.setPr2(saving.getPr2() + 400);
+                        saving.setPr3(saving.getPr3() + 700);
+                        saving.setPr4(saving.getPr4() + 900);
                         FileReader.saveSaving(saving);
                     }
                     if (x == 3 && (saving.getDen() < 200 || saving.getPr2() < 0)) {
@@ -108,10 +102,9 @@ public class Food {
                         saving.setEne(saving.getEne() + 35);
                         saving.setHap(saving.getHap() + 8);
                         saving.setPr(saving.getPr() + 10);
-                        saving.setPr2(saving.getPr2() + 4000);
-                        saving.setPr3(saving.getPr3() + 20000);
-                        saving.setPr4(saving.getPr4() + 40000);
-                        saving.setXp(saving.getXp() + 40);
+                        saving.setPr2(saving.getPr2() + 400);
+                        saving.setPr3(saving.getPr3() + 700);
+                        saving.setPr4(saving.getPr4() + 900);
                         FileReader.saveSaving(saving);
                     }
                     if (x == 4 && (saving.getDen() < 350 || saving.getPr3() < 0)) {
@@ -124,10 +117,9 @@ public class Food {
                         saving.setEne(saving.getEne() + 40);
                         saving.setHap(saving.getHap() + 10);
                         saving.setPr(saving.getPr() + 10);
-                        saving.setPr2(saving.getPr2() + 4000);
-                        saving.setPr3(saving.getPr3() + 20000);
-                        saving.setPr4(saving.getPr4() + 40000);
-                        saving.setXp(saving.getXp() + 50);
+                        saving.setPr2(saving.getPr2() + 400);
+                        saving.setPr3(saving.getPr3() + 700);
+                        saving.setPr4(saving.getPr4() + 900);
                         FileReader.saveSaving(saving);
                     }
                     if (x == 5 && (saving.getDen() < 500 || saving.getPr4() < 0)) {

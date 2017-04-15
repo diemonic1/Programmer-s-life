@@ -13,16 +13,18 @@ public class Komp {
                 //читаем из файла
                 Saving saving = FileReader.getSaving();
                 while (true) {
-                    System.out.println(saving.getDen() + " рублей    " + saving.getHap() + " настроения    " + saving.getEne() + " энергии    " + saving.getXp() + " опыт");
+                    System.out.println("     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n");
+                    System.out.println(saving.getDen() + " рублей | " + saving.getHap() + " настроения | " + saving.getEne() + " энергии");
                     System.out.println("-----");
                     System.out.println("одежда - " + saving.getShmot());
                     System.out.println("компьютер - " + saving.getKomp());
+                    System.out.println("проект - " + saving.getProject());
                     System.out.println("-----");
                     if (saving.getDen() < 1000 || (!saving.getShmot().equals("брюки, туфли и рубашка") && saving.getKomp().equals("старый, часто удаляющий винду по своей прихоти"))) {
                         System.out.println("1:\uD83D\uDD12Банальный слабенький ноутбок. Все же лучше, чем старая рухлядь - 2 000 рублей");
                     }
                     if (saving.getDen() >= 1000 && (saving.getShmot().equals("брюки, туфли и рубашка") || saving.getKomp().equals("ноутбук") || saving.getKomp().equals("готовый") || saving.getKomp().equals("готовый, улучшенный") || saving.getKomp().equals("топовый") || saving.getKomp().equals("топовый, на заказ"))) {
-                        System.out.println("1:Банальный слабенький ноутбок. Все же лучше, чем старая рухлядь - 4 000 рублей");
+                        System.out.println("1:Банальный слабенький ноутбок. Все же лучше, чем старая рухлядь - 2 000 рублей");
                     }
 
                     if (saving.getDen() < 20000 || saving.getPr() < 0) {
@@ -85,7 +87,7 @@ public class Komp {
                         }
                     }
                     if (x == 2 && (saving.getDen() < 20000 || saving.getPr() < 0)) {
-                        System.out.println("Неоходимо 20 000 рублей и создать свой первый проект ");
+                        System.out.println("Неоходимо 20 000 рублей и создать свой первый проект");
                     }
 
                     if (x == 3 && saving.getDen() >= 50000 && saving.getPr2() >= 0) {

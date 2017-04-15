@@ -14,7 +14,23 @@ public class Project {
                     Saving saving = FileReader.getSaving();
                     while (true) {
 
-                        System.out.println(saving.getDen() + " рублей    " + saving.getHap() + " настроения    " + saving.getEne() + " энергии    " + saving.getXp() + " опыт");
+                        if (saving.getPr2() >= 0) {
+                            saving.setPrsumma2(saving.getPr() + saving.getPr2());
+                        }
+                        if (saving.getPr3() >= 0) {
+                            saving.setPrsumma3(saving.getPr() + saving.getPr2() + saving.getPr3());
+                        }
+                        if (saving.getPr4() >= 0) {
+                            saving.setPrsumma4(saving.getPr() + saving.getPr2() + saving.getPr3() + saving.getPr4());
+                        }
+                        FileReader.saveSaving(saving);
+
+                        System.out.println("     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n");
+                        System.out.println(saving.getDen() + " рублей | " + saving.getHap() + " настроения | " + saving.getEne() + " энергии");
+                        System.out.println("-----");
+                        System.out.println("одежда - " + saving.getShmot());
+                        System.out.println("компьютер - " + saving.getKomp());
+                        System.out.println("проект - " + saving.getProject());
                         System.out.println("-----");
                         if (saving.getDen() < 5000 || !saving.getShmot().equals("брюки, туфли и рубашка") || !saving.getKomp().equals("ноутбук") || saving.getPr() >= 0) {
                             System.out.println("1:\uD83D\uDD12Устроить тараканьи бега со ставками в подсобке компании - 5 000 рублей");
@@ -51,7 +67,13 @@ public class Project {
                             System.out.println("5:Стать великим программистом");
                         }
                         System.out.println("---");
-                        System.out.println("6:Забрать прибыль");
+
+                        if (saving.getPr() > 0 || saving.getPrsumma2() > 0 || saving.getPrsumma3() > 0 || saving.getPrsumma4() > 0) {
+                            System.out.println("6:Забрать прибыль");
+                        } else {
+                            System.out.println("6:\uD83D\uDD12Забрать прибыль");
+                        }
+
                         System.out.println("---");
                         System.out.println("9:Назад");
                         Scanner in = new Scanner(System.in);
@@ -61,6 +83,7 @@ public class Project {
                             System.out.println("Вперед, таракашек номер три! На тебя поставил мой начальник!");
                             saving.setDen(saving.getDen() - 5000);
                             saving.setPr(0);
+                            saving.setProject("тараканьи бега");
                             FileReader.saveSaving(saving);
                         }
                         if (x == 1 && (saving.getDen() < 5000 || !saving.getShmot().equals("брюки, туфли и рубашка") || !saving.getKomp().equals("ноутбук"))) {
@@ -71,16 +94,18 @@ public class Project {
                             System.out.println("Это станет хитом плэй маркета!");
                             saving.setDen(saving.getDen() - 20000);
                             saving.setPr2(0);
+                            saving.setProject("фри-ту-плэй клон ГТА");
                             FileReader.saveSaving(saving);
                         }
                         if (x == 2 && (saving.getDen() < 20000 || !saving.getShmot().equals("кофта, штаны и кросовки ABIBAS") || !saving.getKomp().equals("готовый"))) {
-                            System.out.println("Необходимо 20 000 рублей, кофта, штаны, кросовки ABIBAS и готовая сборка компбютера");
+                            System.out.println("Необходимо 20 000 рублей, кофта, штаны, кросовки ABIBAS и готовая сборка компьютера");
                         }
 
                         if (x == 3 && saving.getPr3() < 0 && saving.getDen() >= 80000 && saving.getShmot().equals("бомбер, джинсы и спортивки") && saving.getKomp().equals("готовый, улучшенный")) {
                             System.out.println("Цены низкие, качество-высокое!(нет)");
                             saving.setDen(saving.getDen() - 80000);
                             saving.setPr3(0);
+                            saving.setProject("интернет-магазин");
                             FileReader.saveSaving(saving);
                         }
                         if (x == 3 && (saving.getDen() < 80000 || !saving.getShmot().equals("бомбер, джинсы и спортивки") || !saving.getKomp().equals("готовый, улучшенный"))) {
@@ -91,6 +116,7 @@ public class Project {
                             System.out.println("Арбитраж трафика, продумывание стратегии, управление бизнес-планом");
                             saving.setDen(saving.getDen() - 120000);
                             saving.setPr4(0);
+                            saving.setProject("стартап на кикстартере");
                             FileReader.saveSaving(saving);
                         }
                         if (x == 4 && (saving.getDen() < 120000 || !saving.getShmot().equals("свитшот, черные джинсы и кеды") || !saving.getKomp().equals("топовый"))) {
@@ -105,12 +131,6 @@ public class Project {
                             System.out.println("Необходимы фланелевая рубашка, джоггеры, олд скулы и сделаный на заказ ПК");
                         }
 
-                        saving.setPrsumma2(saving.getPr() + saving.getPr2());
-                        saving.setPrsumma3(saving.getPr() + saving.getPr2() + saving.getPr3());
-                        saving.setPrsumma4(saving.getPr() + saving.getPr2() + saving.getPr3() + saving.getPr4());
-
-                        FileReader.saveSaving(saving);
-
                         if (x == 6 && saving.getPr() >= 0 && saving.getPr2() >= 0 && saving.getPr3() >= 0 && saving.getPr4() >= 0) {
                             System.out.println("С проектов собрано - " + saving.getPrsumma4() + " рублей");
                             saving.setDen(saving.getDen() + saving.getPrsumma4());
@@ -120,7 +140,7 @@ public class Project {
                             saving.setPr4(0);
                             FileReader.saveSaving(saving);
                         }
-                        if (x == 6 && saving.getPr() >= 0 && saving.getPr2() >= 0 && saving.getPr3() >= 0) {
+                        else if (x == 6 && saving.getPr() >= 0 && saving.getPr2() >= 0 && saving.getPr3() >= 0) {
                             System.out.println("С проектов собрано - " + saving.getPrsumma3() + " рублей");
                             saving.setDen(saving.getDen() + saving.getPrsumma3());
                             saving.setPr(0);
@@ -128,14 +148,14 @@ public class Project {
                             saving.setPr3(0);
                             FileReader.saveSaving(saving);
                         }
-                        if (x == 6 && saving.getPr() >= 0 && saving.getPr2() >= 0) {
+                        else if (x == 6 && saving.getPr() >= 0 && saving.getPr2() >= 0) {
                             System.out.println("С проектов собрано - " + saving.getPrsumma2() + " рублей");
                             saving.setDen(saving.getDen() + saving.getPrsumma2());
                             saving.setPr(0);
                             saving.setPr2(0);
                             FileReader.saveSaving(saving);
                         }
-                        if (x == 6 && saving.getPr() >= 0) {
+                        else if (x == 6 && saving.getPr() >= 0) {
                             System.out.println("С проектов собрано - " + saving.getPr() + " рублей");
                             saving.setDen(saving.getDen() + saving.getPr());
                             saving.setPr(0);
